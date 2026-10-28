@@ -211,7 +211,6 @@ function resumen({ id, items, subtotal, descuento, total }) {
   dialogo.innerHTML = `
     <h2>Pedido confirmado</h2>
     <p class="dialogo-etiqueta">${id}</p>
-    <p class="dialogo-nota">Simulación local: no se realizó ningún pago ni se modificó el inventario de data/products.json.</p>
     <ul class="dialogo-lineas">
       ${items.map((i) => `<li><span>${i.name} × ${i.cantidad}</span><span>${fmt(i.price * i.cantidad)}</span></li>`).join("")}
     </ul>
